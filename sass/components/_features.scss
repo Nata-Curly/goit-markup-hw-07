@@ -1,0 +1,35 @@
+.feature {
+    background-color: inherit;
+    padding: 94px 0 0;
+
+    &__list {
+            display: flex;
+            gap: 30px;
+        }
+    
+    &__card {
+            @extend %flex-cented;
+            height: 120px;
+            margin-bottom: 30px;
+            background-color: var(--color-background-secondary);
+            border-radius: 4px;
+        }
+    
+    &__title {
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+    
+    &__text {
+            font-size: 14px;
+            line-height: 1.7;
+            letter-spacing: 0.03em;
+            color: var(--color-secondary);
+            width: 270px;
+            margin-bottom: 0;
+        }
+}
+

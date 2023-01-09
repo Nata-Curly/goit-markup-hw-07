@@ -1,0 +1,48 @@
+
+.footer {
+    background-color: var(--color-section-background);
+    padding: 60px 0;
+
+    &__container {
+            display: flex;
+            gap: 70px;
+        }
+}
+
+
+
+.address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    margin-top: 28px;
+
+    &__link {
+            display: inline-block;
+            color: var(--color-action-primery);
+            text-decoration: none;
+            cursor: pointer;
+        }
+    
+        &__link-mailto,
+        &__link-tel {
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 12px;
+            transition-property: color;
+            transition-duration: var(--action-duration);
+            transition-timing-function: var(--cubic-bezier);
+
+                &:hover,
+                &:focus {
+                    color: var(--color-action-secondary);
+                }
+        }
+
+}
+
+
+
+
+
+

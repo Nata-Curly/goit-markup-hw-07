@@ -1,0 +1,28 @@
+
+.clients {
+    @extend %flex-cented;
+    gap: 30px;
+
+    &__title {
+            @include section-title;
+        }
+        
+    &__link {
+            @extend %flex-cented;
+            width: 170px;
+            height: 92px;
+            border: 1px solid var(--color-icon-primary);
+            border-radius: 4px;
+            fill: var(--color-icon-primary);
+            transition-property: fill border-color;
+            transition-duration: var(--action-duration);
+            transition-timing-function: var(--cubic-bezier);
+    
+            &:hover,
+            &:focus {
+                fill: var(--color-action-secondary);
+                border-color: var(--color-action-secondary);
+            }
+        }
+}
+
